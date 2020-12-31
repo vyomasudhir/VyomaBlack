@@ -1,0 +1,43 @@
+<Page
+    navigatingTo="onNavigatingTo"
+    xmlns="http://schemas.nativescript.org/tns.xsd"
+    xmlns:lv="nativescript-ui-listview" 
+      actionBarHidden="true" 
+      class="page">
+    <ActionBar>
+        <NavigationButton tap="onBackButtonTap" android.systemIcon="ic_menu_back"/>
+        <Label text="{{ videoTitle }}"></Label>
+    </ActionBar>
+    <StackLayout height="100%" width="100%" paddingTop="9">
+        <StackLayout orientation="horizontal" width="100%">
+            <Image src="https://www.vyomalabs.in/wp-content/uploads/2019/11/New_Vyoma_whjite-e1573535373473.png" 
+    height="110" width="125" horizontalAlignment="left" ></Image>
+            <Label text="{{ videoTitle }}" class="videoHeader" height="110"  textWrap="true"/>
+
+        </StackLayout>
+        
+        <WebView src="{{ videoId }}" actionBarHidden="true" width="100%"></WebView>
+         <Label text="{{ videoDescription }}" class="videoDescription" height="65"  textWrap="true"/>
+        <lv:RadListView items="{{ playlist.videos }}" itemTap="onItemTap">
+            <lv:RadListView.itemTemplate>
+                <GridLayout width="100%" horizontalAlignment="left">
+                    <ios>
+                        <Image src="{{ videoThumbnail }}" stretch="aspectFill"></Image>
+                    </ios>
+                    <android>
+                        <Image src="{{ videoThumbnail }}" stretch="aspectFill"
+                    width="120" borderRadius="15" horizontalAlignment="left"></Image>
+                    </android>
+                    <GridLayout verticalAlignment="middle">
+                        <StackLayout paddingTop="1" paddingBottom="1"
+                    paddingLeft="65" paddingRight="0" orientation="horizontal">
+                            <Label text="{{ videoOrder }}" class="videoOrder" width="60" height="90" textWrap="true" ></Label>
+                            <Label text="{{ videoTitle }}" class="videoTitle" width="100%" height="92" textWrap="true" ></Label>
+                            
+                        </StackLayout>
+                    </GridLayout>
+                </GridLayout>
+            </lv:RadListView.itemTemplate>
+        </lv:RadListView>
+    </StackLayout>
+</Page>

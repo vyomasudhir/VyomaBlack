@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "133795876750",
+    "firebase_url": "https://vyomaprime.firebaseio.com",
+    "project_id": "vyomaprime",
+    "storage_bucket": "vyomaprime.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:133795876750:android:13e6625046e8ce316b9edf",
+        "android_client_info": {
+          "package_name": "com.vyoma.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "133795876750-45u60v7k21ug5mricdlsslkpa1g08m13.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzBem7UB4Fysd194Uow-9DhVSb5o2Xbm4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "133795876750-45u60v7k21ug5mricdlsslkpa1g08m13.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:133795876750:android:625281c66f3e026a6b9edf",
+        "android_client_info": {
+          "package_name": "org.nativescript.VyomaBlack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "133795876750-45u60v7k21ug5mricdlsslkpa1g08m13.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzBem7UB4Fysd194Uow-9DhVSb5o2Xbm4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "133795876750-45u60v7k21ug5mricdlsslkpa1g08m13.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:133795876750:android:d9a98f03c86753976b9edf",
+        "android_client_info": {
+          "package_name": "org.nativescript.VyomaPrime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "133795876750-45u60v7k21ug5mricdlsslkpa1g08m13.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzBem7UB4Fysd194Uow-9DhVSb5o2Xbm4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "133795876750-45u60v7k21ug5mricdlsslkpa1g08m13.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

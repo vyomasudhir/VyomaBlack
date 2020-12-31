@@ -1,0 +1,94 @@
+// Import common styles
+@import "app-common";
+
+// Place any CSS rules you want to apply only on Android here
+.playlistTitle {
+    color: rgba(230,230,230,10);
+    font-family: 'Nordica Plus', 'nordicaclassicltext';
+    font-weight: normal;
+    font-size: 12;
+    background: rgba(10,10,15,0.85);
+    vertical-align: middle;
+    text-align: center;
+    align-content: center;
+}
+
+.sectionTitle {
+    color: rgba(240,240,240,10);
+    font-family: 'Nordica Plus', 'nordicaclassicltext';
+    font-weight: bold;
+    font-size: 18;
+    background: rgba(0,0,0,0.85);
+    vertical-align: bottom;
+}
+
+.page {
+    color: rgba(255,255,255,10);
+    font-family: 'Nordica Plus', 'nordicaclassicltext';
+    font-weight: bold;
+    font-size: 16;
+    background111: rgba(0,0,0,0.9);
+    background: black;
+    vertical-align: middle;
+    align-content: center;
+    
+}
+
+
+.menuItem {
+    color: rgba(250,250,250,10);
+    font-family: 'Nordica Plus', 'nordicaclassicltext';
+    font-weight: normal;
+    font-size: 14;
+    background: rgba(10,10,20,0.6);
+    vertical-align: middle;
+    align-content: center;
+    padding: 20;
+    
+}
+
+.videoHeader
+{
+    color: #ffffff;
+    font-family: 'Nordica Plus', 'nordicaclassicltext';
+    font-weight: normal;
+    font-size: 16;
+    background: black;
+    padding-top: 35;
+    padding-right: 5;
+}
+
+.videoDescription
+{
+    color: #dddddd;
+    font-family: 'Nordica Plus', 'nordicaclassicltext';
+    font-weight: normal;
+    font-size: 14;
+    background: black;
+    padding-top: 2;
+    padding-right: 2;
+}
+
+.videoOrder
+{
+    color: rgba(230,230,230,10);
+    font-family: 'Nordica Plus', 'nordicaclassicltext';
+    font-weight: normal;
+    font-size: 18;
+    background: rgba(10,10,15,0.85);
+    vertical-align: middle;
+    text-align: center;
+    align-content: center;
+    padding-top: 34;
+}
+
+.videoTitle
+{
+    color: #dddddd;
+    font-family: 'Nordica Plus', 'nordicaclassicltext';
+    font-weight: normal;
+    font-size: 16;
+    background: black;
+    padding-top: 12;
+    padding-right: 5;
+}

@@ -1,0 +1,51 @@
+<Page
+    navigatingTo="onNavigatingTo"
+    xmlns="http://schemas.nativescript.org/tns.xsd"
+    xmlns:lv="nativescript-ui-listview" 
+    actionBarHidden="true" 
+    class="page">
+    <ActionBar>
+        <Label text="Vyoma Black"></Label>
+    </ActionBar>
+    <StackLayout orientation="vertical" height="100%"  paddingTop="9">
+        <StackLayout orientation="horizontal" width="100%">
+        <Image src="https://www.vyomalabs.in/wp-content/uploads/2019/11/New_Vyoma_whjite-e1573535373473.png" 
+    height="110" width="125" horizontalAlignment="left" ></Image>
+            <Label class="menuItem" text="Videos"/>
+            <Label class="menuItem" text="Courses"/>
+            <Label class="menuItem" text="About Us"/>
+            </StackLayout>
+        <!-- Shows all videos
+    <lv:RadListView items="{{ sections }}"><lv:RadListView.itemTemplate><StackLayout orientation="vertical"><Label fontSize="20" text="{{ sectionTitle }}"/><lv:RadListView items="{{ playlists }}" height="100%"><lv:RadListView.itemTemplate><StackLayout orientation="vertical"><Label text="{{ playlistTitle }}"/><lv:RadListView items="{{ videos }}" itemTap="onItemTap" height="100%" ><lv:RadListView.listViewLayout><lv:ListViewLinearLayout scrollDirection="Horizontal" itemHeight="150"></lv:ListViewLinearLayout></lv:RadListView.listViewLayout><lv:RadListView.itemTemplate orientation="horizontal"><StackLayout orientation="Vertical"><Label text="{{ videoOrder }}" textWrap="true" width="75"></Label><Image src="{{ videoThumbnail }}" height="75"></Image></StackLayout></lv:RadListView.itemTemplate></lv:RadListView></StackLayout></lv:RadListView.itemTemplate></lv:RadListView></StackLayout></lv:RadListView.itemTemplate></lv:RadListView>
+    -->
+        <lv:RadListView items="{{ sections }}" height="100%">
+            <lv:RadListView.itemTemplate>
+                <StackLayout orientation="vertical" height="100%">
+                    <Label class="sectionTitle" text="{{ sectionTitle }}"/>
+                    <lv:RadListView items="{{ playlists }}" height="90" itemTap="onItemTap">
+                        <lv:RadListView.listViewLayout>
+                            <lv:ListViewLinearLayout scrollDirection="Horizontal" ></lv:ListViewLinearLayout>
+                        </lv:RadListView.listViewLayout>
+                        <lv:RadListView.itemTemplate>
+                            <GridLayout width="125">
+                                <ios>
+                                    <Image src="{{ videoThumbnail }}" stretch="aspectFill"></Image>
+                                </ios>
+                                <android>
+                                    <Image src="{{ videoThumbnail }}" stretch="aspectFill"
+                            width="120" borderRadius="15"></Image>
+                                </android>
+                                <GridLayout verticalAlignment="bottom">
+                                    <StackLayout paddingTop="2" paddingBottom="1"
+                            paddingLeft="0" paddingRight="1">
+                                        <Label text="{{ playlistTitleToShow }}" class="playlistTitle" width="121" height="24" textWrap="true" ></Label>
+                                    </StackLayout>
+                                </GridLayout>
+                            </GridLayout>
+                        </lv:RadListView.itemTemplate>
+                    </lv:RadListView>
+                </StackLayout>
+            </lv:RadListView.itemTemplate>
+        </lv:RadListView>
+    </StackLayout>
+</Page>
