@@ -35,7 +35,8 @@
     "@nativescript/theme": "~2.3.0",
     "firebase": "^8.2.0",
     "nativescript-grid-view": "^5.1.0",
-    "nativescript-ui-listview": "^9.0.4"
+    "nativescript-ui-listview": "^9.0.4",
+    "nativescript-webview-interface": "^1.4.4"
   },
   "devDependencies": {
     "@nativescript/android": "7.0.1",

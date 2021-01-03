@@ -188,7 +188,8 @@ function getPlaylistItems(auth, sectionTitle, playlistTitle, playlistId)
       service.playlistItems.list({
         auth: auth,
         part: 'snippet,contentDetails',
-        playlistId: playlistId
+        playlistId: playlistId,
+        maxResults:50  
       }, function(err, response) {
         if (err) {
           console.log('The API returned an error: ' + err);
@@ -204,13 +205,13 @@ function getPlaylistItems(auth, sectionTitle, playlistTitle, playlistId)
             var ord = 0;
             playlistItems.forEach(function(obj) {
                 ord ++;
-                console.log("Section Title:" + sectionTitle);
+                //console.log("Section Title:" + sectionTitle);
                 console.log("Playlist Title:" + playlistTitle);
                 console.log("Video Order:" + ord);
-                console.log("Video Title:" + obj.snippet.title);
-                console.log("Video Description:" + obj.snippet.description);
-                console.log("Video Id:" + obj.contentDetails.videoId);
-                console.log("Video thumbnail:" + obj.snippet.thumbnails.default.url);
+                //console.log("Video Title:" + obj.snippet.title);
+                //console.log("Video Description:" + obj.snippet.description);
+                //console.log("Video Id:" + obj.contentDetails.videoId);
+                //console.log("Video thumbnail:" + obj.snippet.thumbnails.default.url);
                 console.log("----------------------------------");
                 uploadVideo(obj.id, sectionTitle, playlistTitle, ord, obj.snippet.title, obj.snippet.description, obj.contentDetails.videoId, obj.snippet.thumbnails.default.url);
             });
@@ -235,7 +236,7 @@ function uploadVideo(id, sectionTitle, playlistTitle, videoOrder, videoTitle, vi
          videoId : videoId,
          videoThumbnail: videoThumbnail
     }).then(function(docRef) {
-        console.log("Document written with ID: ", docRef.id);
+        console.log("Document written with ID(order): ", docRef.id + "("+ docRef.videoOrder + ")");
     })
     .catch(function(error) {
         console.error("Error adding document: ", error);
